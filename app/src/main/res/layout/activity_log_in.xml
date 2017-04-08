@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ashok.firebaseauthdemo.LogInActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:baselineAligned="false">
+
+        <EditText
+            android:id="@+id/id_Login"
+            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="italic"
+            android:textColor="@color/common_plus_signin_btn_text_light_focused"
+            android:text="User LogIn"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="180dp"
+            android:inputType="" />
+
+        <EditText
+            android:id="@+id/editTextemail"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+
+            android:ems="15"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="271dp" />
+
+        <EditText
+            android:id="@+id/editTextpassword"
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:ems="15"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="271dp" />
+
+        <Button
+            android:id="@+id/buttonSignin"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Time to LogIn"
+            android:background="@color/common_plus_signin_btn_text_dark_disabled"
+            tools:layout_editor_absoluteX="136dp"
+            android:textColor="@color/colorAccent"
+            tools:layout_editor_absoluteY="365dp" />
+
+        <TextView
+            android:id="@+id/textViewSignUp"
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:text="Not have an Account?SignUp Here"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
